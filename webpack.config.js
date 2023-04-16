@@ -7,7 +7,11 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/",
+  },
+  devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+    hot: true,
   },
   module: {
     rules: [
@@ -33,7 +37,6 @@ module.exports = {
       minify: {
         removeComments: true,
         collapseWhitespace: true,
-        removeAttributeQuotes: true,
       },
     }),
   ],

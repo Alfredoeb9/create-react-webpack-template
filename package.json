@@ -26,7 +26,7 @@
     "webpack-dev-server": "^4.13.3"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "eslintConfig": {
